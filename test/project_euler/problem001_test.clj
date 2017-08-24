@@ -4,4 +4,4 @@
 
 (deftest test001
   (testing "Problem 001"
-    (is (= (problem001) 233168))))
+    (is (= 233168 (problem001)))))
