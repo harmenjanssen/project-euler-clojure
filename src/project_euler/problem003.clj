@@ -1,17 +1,10 @@
-(ns project-euler.problem003)
+(ns project-euler.problem003
+  (:use [project-euler.helpers :refer :all]))
 
-(def target 600851475143N)
-
-(defn divisible?
-  [a b]
-  (zero? (mod a b)))
-
-(defn prime?
-  [n]
-  (and (> n 1) (not-any? #(divisible? n %) (range 2 n))))
-
-(reduce max (take 10 (filter (and prime? #(divisible? target %)) (range 2 target))))
+(def target 600851475143)
 
 (defn problem003
+  "The prime factors of 13195 are 5, 7, 13 and 29.
+  What is the largest prime factor of the number 600851475143 ?"
   []
-  (max )
+  (reduce max (filter prime? (factors target))))
