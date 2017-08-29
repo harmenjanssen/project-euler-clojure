@@ -25,9 +25,9 @@
 (defn factors
   "Lists a number's factors"
   [target]
-  (loop [lst []
+  (loop [lst #{}
          n 1]
-    (if (gte n (math/ceil (math/sqrt target)))
+    (if (gte n (inc (math/ceil (math/sqrt target))))
       lst
       (recur
         (if (divisible? target n) (add-dual-factors lst target n) lst)
