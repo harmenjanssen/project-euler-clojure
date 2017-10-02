@@ -1,4 +1,4 @@
-(ns project-euler.problem005
+(ns project-euler.problem006
   (:use [project-euler.helpers :refer :all]))
 
 (defn square-of-sum
