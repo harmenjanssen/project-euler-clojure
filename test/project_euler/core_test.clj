@@ -6,16 +6,18 @@
             [project-euler.problem004 :refer [problem004]]
             [project-euler.problem005 :refer [problem005]]
             [project-euler.problem006 :refer [problem006]]
+            [project-euler.problem007 :refer [problem007]]
   )
 )
 
 (deftest all-solutions
   (testing "All solutions"
-    (is (= 233168 (problem001)))
-    (is (= 4613732 (problem002)))
-    (is (= 6857 (problem003)))
+    (is (= 233168 (problem001 1000)))
+    (is (= 4613732 (problem002 4000000)))
+    (is (= 6857 (problem003 600851475143)))
     (is (= 906609 (problem004)))
     (is (= 232792560 (problem005 20)))
     (is (= 25164150 (problem006 100)))
+    (is (= 104743 (problem007 10001)))
   )
 )
