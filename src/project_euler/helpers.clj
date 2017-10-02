@@ -36,3 +36,11 @@
 (defn prime?
   [n]
   (= 2 (count (factors n))))
+
+(defn square
+  [n]
+  (* n n))
+
+(defn sum
+  [numbers]
+  (reduce + numbers))
