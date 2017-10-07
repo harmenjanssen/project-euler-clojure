@@ -7,6 +7,7 @@
             [project-euler.problem005 :refer [problem005]]
             [project-euler.problem006 :refer [problem006]]
             [project-euler.problem007 :refer [problem007]]
+            [project-euler.problem008 :refer [problem008]]
   )
 )
 
@@ -19,5 +20,6 @@
     (is (= 232792560 (problem005 20)))
     (is (= 25164150 (problem006 100)))
     (is (= 104743 (problem007 10001)))
+    (is (= 23514624000 (problem008 13)))
   )
 )
